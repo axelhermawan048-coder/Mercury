@@ -1,6 +1,6 @@
 // Variable Global State
 let currentSlide = 0;
-const totalSlides = 2;
+const totalSlides = 3;
 let currentSymbol = 'BTC/USD';
 let currentTimeframe = '1D';
 let tempDepositAmount = 0;
@@ -41,9 +41,10 @@ const translations = {
     kycTitle: "Pengesahan Identiti (KYC)", uploadKtp: "Muat Naik Foto KTP / Pasport", uploadSelfie: "Muat Naik Foto Selfie Bersama KTP", btnSubmitKyc: "Hantar Dokumen KYC",
     banner1Tag: "KEUNTUNGAN MAKSIMAL", banner1Title: "Mencapai Kejayaan Kewangan Bersama Platform Terunggul",
     banner2Tag: "PASARAN GLOBAL", banner2Title: "Pelaburan Bijak dalam Saham Malaysia, US & Kripto",
+    banner3Tag: "SECURITIES RESMI", banner3Title: "Buka Rekening Saham Mercury Securities & Nikmati Komisi Rendah",
     featTitle: "Keunggulan Platform", feat1Title: "Keselamatan Tinggi", feat1Desc: "Enkripsi data ketat & verifikasi KYC terjamin.",
     feat2Title: "Data Real-Time", feat2Desc: "Pantau harga saham & kripto secara langsung.",
-    quickSystem: "Sistem Eksekusi Pantas", lowSpread: "Nisbah Spread Rendah & Transaksi Selamat", exploreMkt: "Terokai Pasaran",
+    quickSystem: "Sistem Eksekusi Pantas", lowSpread: "Nisbah Spread Rendah & Transaksi Selamat", exploreMkt: "Terokai Pasaran", btnMercury: "Daftar Mercury Securities",
     news1Cat: "Forex", news1Time: "10 minit lepas", news1Title: "Dolar AS Mengukuh Menjelang Keputusan Kadar Faedah Fed",
     news2Cat: "Kripto", news2Time: "45 minit lepas", news2Title: "Bitcoin Menembusi $68,000 Susulan Pengumpulan ETF",
     popTitle: "Maklumat Akaun Admin", popSub: "Sila buat pemindahan dana mengikut maklumat di bawah:",
@@ -65,9 +66,10 @@ const translations = {
     kycTitle: "Verifikasi Identitas (KYC)", uploadKtp: "Unggah Foto KTP / Paspor", uploadSelfie: "Unggah Foto Selfie Memegang KTP", btnSubmitKyc: "Kirim Dokumen KYC",
     banner1Tag: "KEUNTUNGAN MAKSIMAL", banner1Title: "Mencapai Keberhasilan Keuangan Bersama Platform Terunggul",
     banner2Tag: "PASAR GLOBAL", banner2Title: "Investasi Cerdas di Saham Malaysia, US & Kripto",
+    banner3Tag: "SECURITIES RESMI", banner3Title: "Buka Rekening Saham Mercury Securities & Nikmati Komisi Rendah",
     featTitle: "Keunggulan Platform", feat1Title: "Keamanan Tinggi", feat1Desc: "Enkripsi data ketat & verifikasi KYC terjamin.",
     feat2Title: "Data Real-Time", feat2Desc: "Pantau harga saham & kripto secara langsung.",
-    quickSystem: "Sistem Eksekusi Cepat", lowSpread: "Rasio Spread Rendah & Transaksi Aman", exploreMkt: "Jelajahi Pasar",
+    quickSystem: "Sistem Eksekusi Cepat", lowSpread: "Rasio Spread Rendah & Transaksi Aman", exploreMkt: "Jelajahi Pasar", btnMercury: "Daftar Mercury Securities",
     news1Cat: "Forex", news1Time: "10 menit lalu", news1Title: "Dolar AS Menguat Menjelang Keputusan Suku Bunga Fed",
     news2Cat: "Kripto", news2Time: "45 menit lalu", news2Title: "Bitcoin Tembus $68,000 Menyusul Akumulasi ETF",
     popTitle: "Informasi Rekening Admin", popSub: "Silakan lakukan transfer dana sesuai informasi di bawah ini:",
@@ -89,9 +91,10 @@ const translations = {
     kycTitle: "Identity Verification (KYC)", uploadKtp: "Upload ID Card / Passport", uploadSelfie: "Upload Selfie Holding ID Card", btnSubmitKyc: "Submit KYC Documents",
     banner1Tag: "MAXIMUM PROFIT", banner1Title: "Achieve Financial Success with the Leading Platform",
     banner2Tag: "GLOBAL MARKETS", banner2Title: "Smart Investment in Malaysia, US Stocks & Crypto",
+    banner3Tag: "OFFICIAL SECURITIES", banner3Title: "Open Mercury Securities Stock Account & Enjoy Low Fees",
     featTitle: "Platform Features", feat1Title: "High Security", feat1Desc: "Strict data encryption & guaranteed KYC verification.",
     feat2Title: "Real-Time Data", feat2Desc: "Monitor stock & crypto prices in real-time.",
-    quickSystem: "Fast Execution System", lowSpread: "Low Spread Ratio & Secure Transactions", exploreMkt: "Explore Markets",
+    quickSystem: "Fast Execution System", lowSpread: "Low Spread Ratio & Secure Transactions", exploreMkt: "Explore Markets", btnMercury: "Join Mercury Securities",
     news1Cat: "Forex", news1Time: "10 mins ago", news1Title: "US Dollar Strengthens Ahead of Fed Interest Rate Decision",
     news2Cat: "Crypto", news2Time: "45 mins ago", news2Title: "Bitcoin Surges Past $68,000 Following ETF Accumulation",
     popTitle: "Admin Account Information", popSub: "Please transfer funds according to the details below:",
@@ -113,9 +116,10 @@ const translations = {
     kycTitle: "身份认证 (KYC)", uploadKtp: "上传身份证 / 护照", uploadSelfie: "上传手持身份证自拍照", btnSubmitKyc: "提交 KYC 文件",
     banner1Tag: "最大利润", banner1Title: "与领先平台共创财务成功",
     banner2Tag: "全球市场", banner2Title: "明智投资马来西亚股票、美股及加密货币",
+    banner3Tag: "官方证券", banner3Title: "开立 Mercury 证券股票账户，享受超低手续费",
     featTitle: "平台优势", feat1Title: "高度安全", feat1Desc: "严格的数据加密与KYC认证保障。",
     feat2Title: "实时数据", feat2Desc: "实时监控股票与加密货币价格。",
-    quickSystem: "快速执行系统", lowSpread: "低点差与安全交易", exploreMkt: "探索市场",
+    quickSystem: "快速执行系统", lowSpread: "低点差与安全交易", exploreMkt: "探索市场", btnMercury: "注册 Mercury 证券",
     news1Cat: "外汇", news1Time: "10分钟前", news1Title: "美联储利率决议前夕，美元走强",
     news2Cat: "加密货币", news2Time: "45分钟前", news2Title: "在ETF持续积累下，比特币突破68,000美元",
     popTitle: "管理员账户信息", popSub: "请根据以下信息转账：",
@@ -183,11 +187,13 @@ function moveSlide(direction) {
 function updateSlider() {
   const container = document.getElementById('slider-container');
   if (container) {
-    container.style.transform = `translateX(-${currentSlide * 100}%)`;
+    container.style.transform = `translateX(-${(currentSlide * 100) / totalSlides}%)`;
     const dot0 = document.getElementById('dot-0');
     const dot1 = document.getElementById('dot-1');
+    const dot2 = document.getElementById('dot-2');
     if (dot0) dot0.className = currentSlide === 0 ? "w-2 h-2 rounded-full bg-emerald-400" : "w-2 h-2 rounded-full bg-slate-500";
     if (dot1) dot1.className = currentSlide === 1 ? "w-2 h-2 rounded-full bg-emerald-400" : "w-2 h-2 rounded-full bg-slate-500";
+    if (dot2) dot2.className = currentSlide === 2 ? "w-2 h-2 rounded-full bg-emerald-400" : "w-2 h-2 rounded-full bg-slate-500";
   }
 }
 
@@ -247,7 +253,7 @@ function openKycModal() {
   const modal = document.getElementById('kycModal');
   if (modal) {
     modal.classList.remove('hidden');
-    modal.classList.add('flex');
+    modal.classList.add('active');
   }
 }
 
@@ -255,25 +261,32 @@ function closeKycModal() {
   const modal = document.getElementById('kycModal');
   if (modal) {
     modal.classList.add('hidden');
-    modal.classList.remove('flex');
+    modal.classList.remove('active');
   }
 }
 
 // FUNGSI MODAL DEPOSIT & TRANSACTION
 function handleDepositSubmit(e) {
   e.preventDefault();
-  const amount = document.getElementById('dep-amount-input').value;
-  const selectedBank = document.getElementById('dep-bank-select').value;
+  const amountInput = document.getElementById('dep-amount-input');
+  const bankSelect = document.getElementById('dep-bank-select');
+  
+  const amount = amountInput ? amountInput.value : 0;
+  const selectedBank = bankSelect ? bankSelect.value : "Maybank (Malayan Banking Berhad)";
   
   tempDepositAmount = amount;
-  document.getElementById('pop-bank-name').innerText = selectedBank;
-  document.getElementById('pop-acc-num').innerText = adminAccounts[selectedBank] || "5123 4567 8901";
-  document.getElementById('pop-dep-amount').innerText = `RM ${parseFloat(amount || 0).toFixed(2)}`;
+  const popBank = document.getElementById('pop-bank-name');
+  const popAcc = document.getElementById('pop-acc-num');
+  const popAmt = document.getElementById('pop-dep-amount');
+
+  if (popBank) popBank.innerText = selectedBank;
+  if (popAcc) popAcc.innerText = adminAccounts[selectedBank] || "5123 4567 8901";
+  if (popAmt) popAmt.innerText = `RM ${parseFloat(amount || 0).toFixed(2)}`;
 
   const modal = document.getElementById('depositModal');
   if (modal) {
     modal.classList.remove('hidden');
-    modal.classList.add('flex');
+    modal.classList.add('active');
   }
 }
 
@@ -281,17 +294,37 @@ function closeDepositModal() {
   const modal = document.getElementById('depositModal');
   if (modal) {
     modal.classList.add('hidden');
-    modal.classList.remove('flex');
+    modal.classList.remove('active');
   }
 }
 
 function copyAccNumber() {
-  const accNum = document.getElementById('pop-acc-num').innerText;
-  navigator.clipboard.writeText(accNum.replace(/\s/g, '')).then(() => {
-    alert('Nomor rekening berhasil disalin: ' + accNum);
-  }).catch(() => {
+  const accNumEl = document.getElementById('pop-acc-num');
+  const accNum = accNumEl ? accNumEl.innerText.replace(/\s/g, '') : "";
+  
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(accNum).then(() => {
+      alert('Nomor rekening berhasil disalin: ' + accNum);
+    }).catch(() => {
+      fallbackCopyText(accNum);
+    });
+  } else {
+    fallbackCopyText(accNum);
+  }
+}
+
+function fallbackCopyText(text) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.select();
+  try {
+    document.execCommand('copy');
+    alert('Nomor rekening berhasil disalin: ' + text);
+  } catch (err) {
     alert('Gagal menyalin nomor rekening.');
-  });
+  }
+  document.body.removeChild(textArea);
 }
 
 function confirmDepositPayment() {
@@ -401,7 +434,7 @@ function openAuthModal(type) {
   const modal = document.getElementById('authModal');
   if (modal) {
     modal.classList.remove('hidden');
-    modal.classList.add('flex');
+    modal.classList.add('active');
   }
   toggleAuthForm(type);
 }
@@ -410,7 +443,7 @@ function closeAuthModal() {
   const modal = document.getElementById('authModal');
   if (modal) {
     modal.classList.add('hidden');
-    modal.classList.remove('flex');
+    modal.classList.remove('active');
   }
 }
 
@@ -421,15 +454,15 @@ function toggleAuthForm(type) {
   const tReg = document.getElementById('modal-tab-reg');
 
   if (type === 'login') {
-    fLogin.classList.remove('hidden');
-    fReg.classList.add('hidden');
-    tLogin.className = "w-1/2 text-center font-bold text-emerald-400 border-b-2 border-emerald-400 pb-1 text-xs";
-    tReg.className = "w-1/2 text-center font-bold text-slate-400 pb-1 text-xs";
+    if (fLogin) fLogin.classList.remove('hidden');
+    if (fReg) fReg.classList.add('hidden');
+    if (tLogin) tLogin.className = "w-1/2 text-center font-bold text-emerald-400 border-b-2 border-emerald-400 pb-1 text-xs";
+    if (tReg) tReg.className = "w-1/2 text-center font-bold text-slate-400 pb-1 text-xs";
   } else {
-    fLogin.classList.add('hidden');
-    fReg.classList.remove('hidden');
-    tReg.className = "w-1/2 text-center font-bold text-emerald-400 border-b-2 border-emerald-400 pb-1 text-xs";
-    tLogin.className = "w-1/2 text-center font-bold text-slate-400 pb-1 text-xs";
+    if (fLogin) fLogin.classList.add('hidden');
+    if (fReg) fReg.classList.remove('hidden');
+    if (tReg) tReg.className = "w-1/2 text-center font-bold text-emerald-400 border-b-2 border-emerald-400 pb-1 text-xs";
+    if (tLogin) tLogin.className = "w-1/2 text-center font-bold text-slate-400 pb-1 text-xs";
   }
 }
 
@@ -449,8 +482,8 @@ function changeLanguage(lang) {
   };
 
   setTxt('lbl-contact-title', t.contactTitle);
-  setHtml('lbl-dep-title', `<i data-feather="arrow-down-left" class="w-4 h-4 mr-1"></i> ${t.depTitle}`);
-  setHtml('lbl-wd-title', `<i data-feather="arrow-up-right" class="w-4 h-4 mr-1"></i> ${t.wdTitle}`);
+  setTxt('lbl-dep-title', t.depTitle);
+  setTxt('lbl-wd-title', t.wdTitle);
   setTxt('btn-deposit', t.btnDep);
   setTxt('btn-withdraw', t.btnWd);
   
@@ -516,6 +549,8 @@ function changeLanguage(lang) {
   setTxt('lbl-banner1-title', t.banner1Title);
   setTxt('lbl-banner2-tag', t.banner2Tag);
   setTxt('lbl-banner2-title', t.banner2Title);
+  setTxt('lbl-banner3-tag', t.banner3Tag);
+  setTxt('lbl-banner3-title', t.banner3Title);
   setTxt('lbl-feat-title', t.featTitle);
   setTxt('lbl-feat1-title', t.feat1Title);
   setTxt('lbl-feat1-desc', t.feat1Desc);
@@ -524,6 +559,7 @@ function changeLanguage(lang) {
   setTxt('lbl-quick-sys', t.quickSystem);
   setTxt('lbl-low-spread', t.lowSpread);
   setTxt('btn-explore-mkt', t.exploreMkt);
+  setTxt('btn-mercury-sec', t.btnMercury);
 
   setTxt('lbl-news1-cat', t.news1Cat);
   setTxt('lbl-news1-time', t.news1Time);
@@ -558,12 +594,19 @@ function updateChartSymbol(symbol) {
   currentSymbol = symbol;
   const dataObj = chartDataMap[symbol];
   if (dataObj && tradingChart) {
-    document.getElementById('lbl-symbol').innerText = symbol;
-    document.getElementById('lbl-subname').innerText = dataObj.name;
-    document.getElementById('lbl-change').innerText = dataObj.change;
-    document.getElementById('lbl-price').innerText = dataObj.price;
-    document.getElementById('lbl-high').innerText = dataObj.high;
-    document.getElementById('lbl-low').innerText = dataObj.low;
+    const elSym = document.getElementById('lbl-symbol');
+    const elSub = document.getElementById('lbl-subname');
+    const elChg = document.getElementById('lbl-change');
+    const elPrc = document.getElementById('lbl-price');
+    const elHgh = document.getElementById('lbl-high');
+    const elLow = document.getElementById('lbl-low');
+
+    if (elSym) elSym.innerText = symbol;
+    if (elSub) elSub.innerText = dataObj.name;
+    if (elChg) elChg.innerText = dataObj.change;
+    if (elPrc) elPrc.innerText = dataObj.price;
+    if (elHgh) elHgh.innerText = dataObj.high;
+    if (elLow) elLow.innerText = dataObj.low;
 
     tradingChart.data.labels = dataObj.labels[currentTimeframe];
     tradingChart.data.datasets[0].data = dataObj.data[currentTimeframe];
